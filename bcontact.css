@@ -1,0 +1,65 @@
+html, body {
+    margin: 0; /* Removes any default margins */
+    height: 100%; /* Ensures both html and body take up the full viewport height */
+}
+
+
+body {
+    background-image: url(aCan.JPG);
+    background-size: cover;
+    margin: 0;
+    height: 50hv;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+.nav-bar{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   height: 15%;
+   gap: 10px;
+   margin-top: 45px;
+}
+
+
+.buttons {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+
+}
+.buttons:hover { 
+    background-color: rgba(0, 0, 0, 0.223);
+    
+}
+
+.para {
+    justify-content: center;
+    color: white;
+    align-items: center;
+    display: flex;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.para:hover {
+    color: grey;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}

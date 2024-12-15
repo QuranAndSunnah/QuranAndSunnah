@@ -1,0 +1,99 @@
+html, body {
+  margin: 0; /* Removes any default margins */
+  height: 100%; /* Ensures both html and body take up the full viewport height */
+}
+
+
+body {
+  background-image: url(/aStars\ \(2\ of\ 5\).jpg );
+  background-size: cover;
+  margin: 0;
+  height: 50hv;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 25px;
+  transition: color .3s;
+  cursor: pointer;
+
+}
+
+#title:hover{
+  color: grey;
+}
+
+#content {
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.338);
+  border-radius: 20px;
+}
+
+.navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  transition:  backrground-color .3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.505);
+  border-radius: 20px;
+}
+
+/* Make the button stay at the bottom center of the screen */
+.home-button-container {
+  position: fixed; /* Stays fixed on the screen */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 50%; /* Horizontally centered */
+  transform: translateX(-50%); /* Centers the element exactly */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Style the home button */
+.home-button {
+  padding: 15px 30px; /* Add some spacing */
+  font-size: 16px; /* Text size */
+  background-color: #444; /* Background color of the button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Make it look like a pill/rounded button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  cursor: pointer; /* Pointer cursor on hover */
+  outline: none; /* Remove focus outline */
+}
+
+/* Add hover effect */
+.home-button:hover {
+  background-color: #666;
+}
+
+/* Add responsiveness for iPhone screen width */
+@media (max-width: 768px) {
+  .home-button {
+    font-size: 14px; /* Slightly smaller text for narrow screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+}
