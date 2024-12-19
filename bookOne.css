@@ -65,6 +65,7 @@ button:hover {
 
 /* Make the button stay at the bottom center of the screen */
 .home-button-container {
+  display:flex;
   position: fixed; /* Stays fixed on the screen */
   bottom: 20px; /* Distance from the bottom of the screen */
   left: 50%; /* Horizontally centered */
