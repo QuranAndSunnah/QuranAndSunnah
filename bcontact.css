@@ -64,7 +64,16 @@ a {
     color: inherit;
 }
 
-img {
-            max-width: 100%;
-            height: auto;
+ img {
+            width: 100%; /* Ensures the image takes up 100% of its container's width */
+            max-width: 100%; /* Prevents the image from exceeding the container */
+            height: auto; /* Maintains the aspect ratio */
+        }
+
+        /* Optional: Add a max height for smaller screens */
+        @media (max-width: 768px) { /* Adjust for smaller screens like phones */
+            img {
+                max-height: 300px; /* Limit height to make the image smaller */
+                object-fit: cover; /* Ensures the image looks good if height is constrained */
+            }
         }
