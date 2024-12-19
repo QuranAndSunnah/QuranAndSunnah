@@ -32,7 +32,7 @@ body {
 }
 
 #content {
-  top:20%;
+     margin-top: -50px; /* Negative value moves it upwards */
   font-size: 15px;
   line-height: 1.8;
   text-align: justify;
